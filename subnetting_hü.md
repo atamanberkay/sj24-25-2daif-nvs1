@@ -14,6 +14,7 @@ Erstelle 4 Subnetze mit der Mindestanzahl an nutzbaren Hosts:
 ### **Lösung:**
 
 | Netz  | Netzwerkadresse  | Subnetzmaske | Broadcastadresse | Hosts |
+|-------|-----------------|--------------|------------------|-----------------------|
 | A     | 192.168.0.0     | /27 (255.255.255.224) | 192.168.0.31  | 192.168.0.1 - 192.168.0.30 |
 | B     | 192.168.0.32    | /28 (255.255.255.240) | 192.168.0.47  | 192.168.0.33 - 192.168.0.46 |
 | C     | 192.168.0.48    | /27 (255.255.255.224) | 192.168.0.79  | 192.168.0.49 - 192.168.0.78 |
@@ -28,6 +29,7 @@ Erstelle 4 Subnetze mit der Mindestanzahl an nutzbaren Hosts:
 - Subnetz-Adressen:
 
 | Subnetz | Netzwerkadresse | Broadcastadresse  | Hosts |
+|---------|----------------|------------------|----------------------|
 | 1       | 193.170.20.0   | 193.170.20.31    | 193.170.20.1 - 193.170.20.30 |
 | 2       | 193.170.20.32  | 193.170.20.63    | 193.170.20.33 - 193.170.20.62 |
 | 3       | 193.170.20.64  | 193.170.20.95    | 193.170.20.65 - 193.170.20.94 |
@@ -44,6 +46,7 @@ Erstelle 4 Subnetze mit der Mindestanzahl an nutzbaren Hosts:
 ### **Lösung:**
 
 | Subnetz | Netzwerkadresse | Subnetzmaske | Broadcastadresse | Hosts |
+|---------|----------------|--------------|------------------|---------------|
 | 1       | 172.28.40.0    | /27          | 172.28.40.31     | 172.28.40.1 - 172.28.40.30 |
 | 2       | 172.28.40.32   | /27          | 172.28.40.63     | 172.28.40.33 - 172.28.40.62 |
 
@@ -75,6 +78,7 @@ Erstelle 4 Subnetze mit der Mindestanzahl an nutzbaren Hosts:
 ## Übung 7: Netzwerk- und Hostanteil der Klassen A, B und C
 
 | Klasse | Netzwerkanteil | Hostanteil |
+|--------|---------------|------------|
 | A      | 8 Bit         | 24 Bit     |
 | B      | 16 Bit        | 16 Bit     |
 | C      | 24 Bit        | 8 Bit      |
