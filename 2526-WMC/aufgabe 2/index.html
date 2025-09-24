@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aroma</title>
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-link">
+</head>
+<body>
+  <header>
+    <h1>Café Aroma</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#menu">Speisekarte</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌗 Theme wechseln</button>
+  </header>
+
+  <main>
+    <!-- Section 1 -->
+    <section id="about">
+      <h2>Willkommen im Café Aroma</h2>
+      <p>Unser gemütliches Café im Herzen der Stadt bietet frischen Kaffee, hausgemachte Kuchen und eine entspannte Atmosphäre.</p>
+      <img src="images/cafe.png" alt="Innenansicht unseres Cafés" width="400">
+    </section>
+
+    <!-- Section 2 -->
+    <section id="menu">
+      <h2>Unsere Speisekarte</h2>
+      <table>   
+        <caption>Getränke & Preise</caption>
+        <thead>
+          <tr>
+            <th>Getränk</th>
+            <th>Größe</th>
+            <th>Preis (€)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Espresso</td><td>klein</td><td>2,00</td></tr>
+          <tr><td>Cappuccino</td><td>mittel</td><td>3,50</td></tr>
+          <tr><td>Latte Macchiato</td><td>groß</td><td>4,00</td></tr>
+          <tr><td>Heiße Schokolade</td><td>mittel</td><td>3,20</td></tr>
+          <tr><td>Tee (verschiedene Sorten)</td><td>Kanne</td><td>3,00</td></tr>
+          <tr><td>Käsekuchen</td><td>Stück</td><td>3,50</td></tr>
+          <tr><td>Apfelstrudel</td><td>Stück</td><td>3,00</td></tr>
+          <tr><td>Brownie</td><td>Stück</td><td>2,80</td></tr>
+          <tr><td>Sandwich</td><td>groß</td><td>4,50</td></tr>
+          <tr><td>Salat</td><td>mittel</td><td>5,00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="team">
+      <h2>Unser Team</h2>
+      <p>Wir sind leidenschaftliche Baristas und Gastgeber:</p>
+      <ul>
+        <li>Anna – Barista</li>
+        <li>Jonas – Service</li>
+        <li>Maria – Konditorin</li>
+      </ul>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Öffnungszeiten</h3>
+    <p>Mo–Fr: 8–18 Uhr<br>Sa–So: 9–16 Uhr</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Café Aroma | Alle Rechte vorbehalten</p>
+  </footer>
+
+  <script>
+    // Theme Switcher
+    const btn = document.getElementById('theme-toggle');
+    const link = document.getElementById('theme-link');
+
+    btn.addEventListener('click', () => {
+      if (link.getAttribute('href') === 'css/theme-light.css') {
+        link.setAttribute('href', 'css/theme-accent.css');
+      } else {
+        link.setAttribute('href', 'css/theme-light.css');
+      }
+    });
+  </script>
+</body>
+</html>

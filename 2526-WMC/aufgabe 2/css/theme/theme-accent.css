@@ -1,0 +1,101 @@
+/* Dunkleres, kräftigeres Design */
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background: #1b1b1b;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+
+h1, h2, h3 {
+  color: #ffcc00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+thead {
+  background: #ffcc00;
+  color: #1b1b1b;
+}
+tbody tr:nth-child(even) {
+  background: #2a2a2a;
+}
+th, td {
+  border: 1px solid #555;
+  padding: 8px;
+}
+
+form {
+  background: #2a2a2a;
+  padding: 1em;
+  border: 1px solid #666;
+}
+
+button {
+  background: #ffcc00;
+  color: #1b1b1b;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #e6b800;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #333;
+  margin-top: 1em;
+}
+
+main img, aside img {
+  display: block;
+  margin: 0.6rem auto;
+  max-width: 90%;
+  height: auto;
+}
+
+#team, #contact {
+  text-align: center;
+}
+
+#team ul {
+  display: inline-block;   
+  text-align: left;       
+  margin: 0;
+  padding-left: 1rem;
+}
+
+
+#contact form {
+  max-width: 420px;
+  margin: 0.6rem auto; 
+  text-align: left;    
+}
+
+#team ul li {
+  margin: 0.35rem 0;
+}
