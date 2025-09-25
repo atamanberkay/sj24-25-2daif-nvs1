@@ -1,5 +1,5 @@
 Versteckte HTML5-Funktion: Das <details>-Element
 
-Das <details>-Element in HTML5 ermöglicht es, Inhalte auf- und zuzuklappen – ganz ohne JavaScript. 
+Das <details>-Element in HxTML5 ermöglicht es, Inhalte auf- und zuzuklappen – ganz ohne JavaScript. 
 Besonders interessant ist die neue name-Eigenschaft: Wenn mehrere <details> dasselbe name haben, kann immer nur eines davon geöffnet sein. 
-So lassen sich mit reinem HTML interaktive Akkordeons bauen, die normalerweise JavaScript erfordern würden.
+So lassen sich mit reinem HTML interaktive Akkordeons bauen, die normalerweise JavaScript erfordern würden. 
