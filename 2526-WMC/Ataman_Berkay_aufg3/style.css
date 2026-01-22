@@ -1,0 +1,160 @@
+/* Grundvariablen für Konsistenz [cite: 7] */
+:root {
+    --primary: #2563eb;
+    --secondary: #64748b;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --white: #ffffff;
+    --gap: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navbar mit Flexbox und Sticky-Effekt [cite: 10, 15] */
+.main-header {
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 20px;
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                color: var(--text-color);
+                font-weight: 500;
+                transition: color 0.3s; /* Animation-Vorbereitung */
+
+                &:hover { color: var(--primary); } /* Pseudoselektor [cite: 11] */
+            }
+        }
+    }
+}
+
+/* CSS Grid Layout [cite: 13] */
+.grid-layout {
+    display: grid;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: var(--gap);
+    padding: 0 20px;
+    /* Mobile First: Alles untereinander */
+    grid-template-areas: 
+        "hero"
+        "content"
+        "sidebar";
+
+    @media (min-width: 768px) {
+        grid-template-areas: 
+            "hero hero"
+            "content sidebar";
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.hero { grid-area: hero; background: var(--primary); color: white; padding: 40px; border-radius: 8px; animation: fadeIn 1s ease-in; }
+.main-content { grid-area: content; }
+.sidebar { grid-area: sidebar; background: #e2e8f0; padding: 20px; border-radius: 8px; }
+
+/* Animation  */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Formular Styling [cite: 9] */
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+    }
+
+    .btn {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover { opacity: 0.9; }
+    }
+}
+
+.resp-img { width: 100%; height: auto; border-radius: 5px; }
+/* Styling für die Tabelle */
+.table-container {
+    overflow-x: auto; /* Macht Tabelle auf kleinen Handys scrollbar */
+    margin: 20px 0;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--white);
+        border: 1px solid #ddd;
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--primary);
+        }
+
+        tr:hover {
+            background-color: #f8fafc; /* Pseudoselektor */
+        }
+    }
+}
+
+/* Video Responsivität */
+.video-wrapper {
+    width: 100%;
+    
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+}

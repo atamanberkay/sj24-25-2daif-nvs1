@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Projekt | Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MeinProjekt</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html" class="active">Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-layout">
+        <section class="main-content">
+            <article class="card">
+                <h1>Projekt-Details & Daten</h1>
+                <p>Hier finden Sie eine Übersicht der verwendeten Techniken und ein Beispielvideo.</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Anforderung</th>
+                                <th>Status</th>
+                                <th>Technik</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Responsive Design</td>
+                                <td>Erledigt</td>
+                                <td>Media-Queries</td>
+                            </tr>
+                            <tr>
+                                <td>Layout-System</td>
+                                <td>Erledigt</td>
+                                <td>CSS-Grid & Flexbox</td>
+                            </tr>
+                            <tr>
+                                <td>Animationen</td>
+                                <td>Erledigt</td>
+                                <td>@keyframes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Video-Einbindung</h2>
+                <div class="video-wrapper">
+                    <video controls poster="https://picsum.photos/seed/video/800/450">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Ihr Browser unterstützt das Video-Tag nicht.
+                    </video>
+                </div>
+                <p><small>Quelle: Big Buck Bunny (Open Source Testvideo)</small></p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+    <div class="sidebar-image">
+        <img src="https://picsum.photos/seed/coding/300/180" alt="Code Illustration" class="resp-img">
+    </div>
+
+    <h3>Projekt-Checkliste</h3>
+    <ul class="checklist">
+        <li>Responsive Layout (Grid) [cite: 13]</li>
+        <li>Sticky Navigation [cite: 15]</li>
+        <li>Formular-Gestaltung [cite: 9]</li>
+        <li>Video-Integration [cite: 16]</li>
+        <li>CSS-Animationen [cite: 17]</li>
+    </ul>
+
+    <div class="info-box">
+        <h3>Deadline</h3>
+        <p>Die Abgabe muss bis zum <strong>10. Jänner 2026</strong> erfolgen[cite: 28].</p>
+        
+        <h3>Präsentation</h3>
+        <p>Anwesenheit in <strong>KW 3 und 4</strong> ist für die Vorstellung verpflichtend[cite: 30].</p>
+    </div>
+
+    <p class="note">
+        <em>Hinweis: Alle Aspekte der Programmierung müssen im Unterricht erklärt werden können.</em>
+    </p>
+</aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mein Schulprojekt</p>
+    </footer>
+</body>
+</html>
